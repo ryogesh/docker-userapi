@@ -1,0 +1,15 @@
+#username in header is required
+HEADERTOKEN : True
+#Default loglevel, can be changed for individual requests
+LOGLEVEL : 'WARNING'
+# Restrict number of containers to a user
+MAX_PER_USER : 3
+# Min and Max port range to use on the host in case of default cloudera ml image
+MINPRT : 8888
+MAXPRT : 8899
+NETWORKMODE: 'bridge'
+# Default cloudera ml image, if this image is used then the network_mode is set to "host" and the mounts are loaded
+DEFAULTIMG : 'cdp_ml:v1'
+# Maximum resources
+MAXCPU : 1.25
+MAXMEM: '4g'
